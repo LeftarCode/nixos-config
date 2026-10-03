@@ -1,11 +1,12 @@
 { ... }:
 
 {
-  boot.loader.systemd-boot = {
+  boot.loader.grub = {
     enable = true;
-    xbootldrMountPoint = "/boot";
-    configurationLimit = 20;
-    editor = false;
+    device = "nodev";
+    efiSupport = true;
+    useOSProber = true;
+    configurationLimit = 5;
   };
 
   boot.loader.efi = {
