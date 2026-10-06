@@ -13,7 +13,10 @@
 
 	templates = {
           enable_builtin_templates = true;
-	  builtin_ids = [ "hyprland" ];
+	  builtin_ids = [ 
+	    "hyprland"
+	    "kitty"
+	  ];
 	};
       };
     };
