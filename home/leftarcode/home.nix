@@ -6,6 +6,8 @@
     ./programs/git.nix
     ./programs/neovim.nix
     ./programs/tmux.nix
+    ./programs/hyprland.nix
+    ./programs/noctalia.nix
   ];
   
   home.username = "leftarcode";

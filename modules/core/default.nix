@@ -8,6 +8,7 @@
     ./nix.nix
     ./packages.nix
     ./users.nix
+    ./home-manager.nix
   ];
 
 
