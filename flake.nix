@@ -26,5 +26,20 @@
         home-manager.nixosModules.home-manager
       ];
     };
+
+    nixosConfigurations.nixchina = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+
+      specialArgs = {
+        inherit noctalia;
+      };
+
+      modules = [
+        ./hosts/nixchina/configuration.nix
+        home-manager.nixosModules.home-manager
+      ];
+    };
+
+
   };
 }
